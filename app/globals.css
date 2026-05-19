@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 20% 98%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --border: 220 13% 91%;
+  --primary: 228 86% 59%;
+}
+.dark {
+  --background: 222 47% 8%;
+  --foreground: 210 40% 98%;
+  --card: 224 32% 12%;
+  --border: 217 19% 24%;
+  --primary: 221 83% 63%;
+}
+body {@apply bg-background text-foreground antialiased;}
+.card {@apply bg-card border border-border rounded-2xl shadow-sm;}
+.input {@apply w-full rounded-xl border border-border bg-transparent px-3 py-2 text-sm;}
+.btn {@apply inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium;}
